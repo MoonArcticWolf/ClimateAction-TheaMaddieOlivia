@@ -47,3 +47,12 @@ TagManager:
   - name: Buildings
     uniqueID: 1315257423
     locked: 0
+  - name: Hover Text
+    uniqueID: 3672229203
+    locked: 0
+  - name: Bar Background
+    uniqueID: 310970557
+    locked: 0
+  - name: Bars
+    uniqueID: 2360893357
+    locked: 0
