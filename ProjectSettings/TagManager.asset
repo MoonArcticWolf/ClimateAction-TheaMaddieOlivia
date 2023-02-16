@@ -47,6 +47,9 @@ TagManager:
   - name: Buildings
     uniqueID: 1315257423
     locked: 0
+  - name: HT overlay
+    uniqueID: 20310033
+    locked: 0
   - name: Hover Text
     uniqueID: 3672229203
     locked: 0
