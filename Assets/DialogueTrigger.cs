@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public void triggerDialogue(){
         FindObjectOfType<DialogueManager>().startDialogue(dialogue);
+        FindObjectOfType<portraitChange>().changeImage(dialogue.image);
 
     }
 }

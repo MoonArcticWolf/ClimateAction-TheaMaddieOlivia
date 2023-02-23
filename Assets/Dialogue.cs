@@ -9,6 +9,6 @@ public class Dialogue
     public string name;
     [TextArea(0, 10)]
     public string[] sentences;
-    public UnityEngine.UI.Image image;
+    public Sprite image;
 
 }

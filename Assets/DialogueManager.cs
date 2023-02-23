@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     private Queue<string> sentences;
     public Animator animator;
-    public Image O;
+
     
 
 
@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
 
         }
         string sentence = sentences.Dequeue();
+        
         Debug.Log(sentence);
         StopAllCoroutines();
         StartCoroutine(typeSentence(sentence));
