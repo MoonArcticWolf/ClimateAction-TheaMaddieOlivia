@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -9,15 +10,21 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     private Queue<string> sentences;
     public Animator animator;
+    public Image O;
+    
+
 
     void Start()
     {
         sentences = new Queue<string>();
+        
     }
+
     public void startDialogue(Dialogue dialogue){
         animator.SetBool("isOpen", true);
         Debug.Log("conversing with" + dialogue.name);
         nameText.text = dialogue.name;
+        // O.GetComponent<portraitChange>().changeImage();
         sentences.Clear();
         foreach (string sentence in dialogue.sentences){
             sentences.Enqueue(sentence);

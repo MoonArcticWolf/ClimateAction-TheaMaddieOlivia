@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class clickDetection : MonoBehaviour
 {
-    void Update () {
-		if (Input.GetMouseButtonDown(0)) {
-			Debug.Log("Mouse Clicked");
-		}
+	void Update() {
+		canvasClick.SetActive(true);
+	}
+	public GameObject canvasClick;
+    void OnMouseDown()  {
+		Debug.Log("mouse clicked");
+		FindObjectOfType<DialogueManager>().displayNextSentence();
 	}
 }
